@@ -1,0 +1,51 @@
+{
+  "name": "json-schema-editor-vue3",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A Vue 3 based JSON Schema Editor component",
+  "main": "dist/json-schema-editor.esm.js",
+  "module": "dist/json-schema-editor.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/json-schema-editor-vue3.git"
+  },
+  "keywords": [
+    "vue",
+    "json-schema",
+    "editor",
+    "vue3",
+    "component"
+  ],
+  "author": "Fury <zhaofuyu76@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "cross-env NODE_ENV=production MODE=lib node esbuild.config.js",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@originjs/vite-plugin-commonjs": "^1.0.3",
+    "element-plus": "^2.8.5",
+    "json-editor-vue3": "^1.1.1",
+    "vue": "^3.5.10"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.17.19",
+    "esbuild-plugin-vue3": "^0.4.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8",
+    "vue-tsc": "^2.1.6"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.10"
+  }
+}
